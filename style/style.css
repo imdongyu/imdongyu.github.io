@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Overlock);
+@import url(http://fonts.googleapis.com/css?family=Coda);
+* { margin: 0; padding: 0;}
+a {color: #6F93CC; text-decoration:none;}
+ul {list-style: none; }
+body{font-size:63%; border-top:5px solid #6F93CC; color:#555; font-family: "Overlock", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;}
+#main {width: 65%; margin: 0 auto;font-size:1.4em;}
+#header {text-align: center;margin:10px;font-family: "coda","Hiragino Sans GB"}
+header nav {text-align:right;}
+header nav a{font-size:1.4em; font-family: "coda";padding:0 10px;}
+header nav a:hover{color: red;}
+
+#content {font-size: 1.4em; }
+#content .listing-seperator{font-weight:bold;}
+#content .listing-item {border-top:1px solid #EEE;border-bottom:1px solid #EEE;line-height:1.5}
+
