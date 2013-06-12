@@ -3,7 +3,7 @@
 * { margin: 0; padding: 0;}
 a {color: #6F93CC; text-decoration:none;}
 ul {list-style: none; }
-body{font-size:63%; border-top:5px solid #6F93CC; color:#555; font-family: "Overlock", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;}
+body{ font-size:62.5%; border-top:5px solid #6F93CC; color:#555; font-family: "Overlock", "Microsoft YaHei", sans-serif;}
 #main {width: 65%; margin: 0 auto;font-size:1.4em;}
 #header {text-align: center;margin:10px;font-family: "coda","Hiragino Sans GB"}
 header nav {text-align:right;}
@@ -11,6 +11,11 @@ header nav a{font-size:1.4em; font-family: "coda";padding:0 10px;}
 header nav a:hover{color: red;}
 
 #content {font-size: 1.4em; }
-#content .listing-seperator{font-weight:bold;}
+#content .listing-seperator{font-weight:bold;margin-bottom: 5px;margin-top: 5px;}
 #content .listing-item {border-top:1px solid #EEE;border-bottom:1px solid #EEE;line-height:1.5}
+#content .listing-item time{ float:right;color:#666;}
+
+.title h2{font-size:1em;}
+.meta{font-size:1em; color:#999;margin:10px;}
+.post{margin:10px;font-size:0.9em;margin-bottom:20px;}
 
