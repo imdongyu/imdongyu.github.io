@@ -2,5 +2,5 @@ auto: true
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title.html
-name: "Lazycats"
+name: "PHPcats"
 markdown: rdiscount
