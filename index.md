@@ -25,7 +25,7 @@ layout: default
 <a href="/page{{paginator.previous_page}}">前一页</a>
 {% endif %}
 {% else %}
-<span><<前一页</span>
+<span>前一页</span>
 {% endif %}
 {% for count in (2..paginator.total_pages) limit:8 %}
 {% if count == paginator.page %}
@@ -37,7 +37,7 @@ layout: default
 {% if paginator.next_page %}
 <a href="/page{{paginator.next_page}}">后一页>></a>
 {% else %}
-<span>后一页>></span>
+<span>后一页</span>
 {% endif %}
 </div>
 </div>
