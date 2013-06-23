@@ -15,3 +15,29 @@ layout: default
   </li>
 {% endfor %}
 </ul>
+
+<div id="pagination">
+<div class="pagenavi">
+{% if paginator.previous_page %}
+{% if paginator.previous_page == 1 %}
+<a href="/" class="current">前一页</a>
+{% else %}
+<a href="/page{{paginator.previous_page}}">前一页</a>
+{% endif %}
+{% else %}
+<span><<前一页</span>
+{% endif %}
+{% for count in (2..paginator.total_pages) limit:8 %}
+{% if count == paginator.page %}
+<span class="current-page">{{count}}</span>
+{% else %}
+<a href="/page{{count}}">{{count}}</a>
+{% endif %}
+{% endfor %}
+{% if paginator.next_page %}
+<a href="/page{{paginator.next_page}}">后一页>></a>
+{% else %}
+<span>后一页>></span>
+{% endif %}
+</div>
+</div>

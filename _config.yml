@@ -2,5 +2,6 @@ auto: true
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title.html
-name: "PHPcats"
+name: "Dongyu"
+paginate: 10
 
