@@ -1,25 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Overlock);
 @import url(http://fonts.googleapis.com/css?family=Coda);
+
 * { margin: 0; padding: 0;}
 a {color: #6F93CC; text-decoration:none;}
 img {max-width:800px;margin: 10px 0}
 ul {list-style: none; }
-body{ font-size:62.5%; border-top:5px solid #6F93CC; color:#666; font-family: "Overlock", "Microsoft YaHei", sans-serif;}
+body{ font-size:62%; color:#666; font-family: "Overlock", "Microsoft YaHei", sans-serif;font-size:1em;}
+#main{ width:80%; margin:0 auto;}
+#header{ border-bottom:2px solid #000; overflow:hidden;margin-top:20px;padding-bottom:5px; }
+#header .logo { text-align:center; color: #555; }
+.menu{ float:right; font-family: 'Overlock';}
+.menu li{ float:left; }
+.menu a{padding:2px 20px;}
+.menu a.current{ color:red; border-bottom:3px solid red;}
 
-#main {width: 65%; margin: 0 auto;font-size:1.4em;}
-#header {text-align: center;margin:10px;font-family: "coda","Hiragino Sans GB"}
-header nav {text-align:right;}
-header nav a{font-size:1.4em; font-family: "coda";padding:0 10px;}
-header nav a:hover{color: red;}
-
-#content {font-size: 1.4em; }
-#content .listing-seperator{color:#999;font-weight:bold;margin-bottom: 5px;margin-top: 5px;}
-#content .listing-item {border-bottom:1px solid #EEE;line-height:1.5}
-#content .listing-item time{ float:right;color:#999;}
+#content{ width:70%; margin-top:20px; padding-right:5px; border-right:1px solid #EEE;}
+#content time{ float:right; color:#ccc;}
 
 .title h2{font-size:1em;}
 .meta{font-size:1em; color:#999;margin:10px;}
 .post{margin:10px;font-size:0.9em;margin-bottom:20px;}
-
-#pagination {font-size:0.8em;margin-top:10px;color:#666;}
+#pagination {font-size:0.8em;margin-top:10px;color:#666;clear:both;}
+#footer{ margin-top:30px; color:#999;}
 
