@@ -2,10 +2,12 @@
 layout: default
 ---
 
-<ul class="listing">
+<!-- 文章 -->
+<ul>
 {% for post in site.posts %}
   <li class="listing-item">
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+	<span class="tags">{{ post.tag }}</span>
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
   </li>
 {% endfor %}
