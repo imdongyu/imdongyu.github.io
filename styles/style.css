@@ -1,0 +1,27 @@
+@charset 'utf-8';
+*{ margin:0; padding:0; }
+a{ text-decoration:none; color:#666; }
+a:link{ color:#D64937; }
+li{ list-style:none;}
+
+article,aside,details,footer,header,nav,section{ display:block; }
+body{ font-size:62%; font-family:'微软雅黑',sens-serf;}
+
+#container{ font-size:1.4em; overflow:hidden; line-height:2;}
+
+aside{ background:#F6F6F6;display:table-cell;width:20%; float:right; padding:3em 5%; color:#666;}
+aside a:first-child{ font-weight:bold; color:#D64937;}
+
+main{ width:60%; padding:3em 5%; line-height:3;float:left;  background:#FFF;color:#999;}
+main li{ border-bottom:1px solid #EEE; }
+main a{ color:#555; }
+main .tags{ margin-left:10px;}
+main time{ float:right; }
+article{ line-height:2; }
+article p{ margin-bottom:1em; }
+
+@media all and (max-width:640px) {
+	aside{ width:100%; float:left;  padding:1em 1em;}
+	aside li{float:left; margin-left:10px;}
+	main { width:90%;}
+}
