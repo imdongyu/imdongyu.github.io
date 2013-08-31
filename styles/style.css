@@ -10,7 +10,7 @@ body{ font-size:62%; font-family:'微软雅黑',sens-serf;width:80%;margin: 0 au
 #container{ font-size:1.4em; overflow:hidden; line-height:2;}
 
 aside{ background:#F6F6F6;display:table-cell;width:20%; float:right; padding:3em 5%; color:#666;}
-aside a:first-child{ font-weight:bold; color:#D64937;}
+li.active a{ font-weight:bold; color:#D64937;}
 
 .main{ width:60%; padding:3em 5%; line-height:3;float:left;  background:#FFF;color:#999;}
 .main li{ border-bottom:1px solid #EEE; }
