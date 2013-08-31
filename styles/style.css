@@ -5,7 +5,7 @@ a:link{ color:#D64937; }
 li{ list-style:none;}
 
 article,aside,details,footer,header,nav,section{ display:block; }
-body{ font-size:62%; font-family:'微软雅黑',sens-serf;}
+body{ font-size:62%; font-family:'微软雅黑',sens-serf;width:80%;margin: 0 auto;}
 
 #container{ font-size:1.4em; overflow:hidden; line-height:2;}
 
