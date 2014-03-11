@@ -25,6 +25,7 @@ a {
   margin: 20px auto;
   background: #FFF;
   padding: 30px;
+  overflow: hidden;
 }
 
 .main {
