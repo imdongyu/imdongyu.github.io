@@ -35,6 +35,9 @@ a {
   border-right: 1px solid #EEE;
   width: 700px;
 }
+.main p {
+  margin-top: 10px;
+}
 
 .posts-list li{
   padding-bottom: 5px;
