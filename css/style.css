@@ -2,13 +2,7 @@
   margin: 0;
   padding: 0;
 }
-pre {
-  padding: 10px;
-  border-radius: 10px;
-}
-code {
-  font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-}
+
 
 html, body {
   color: #555;
