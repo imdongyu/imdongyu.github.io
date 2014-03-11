@@ -1,9 +1,10 @@
 ---
-- layout: post
-- title: 七牛抓取远程图片
+layout: post
+title: 七牛抓取远程图片
 ---
 
 七牛支持抓取远程图片 [API](http://developer.qiniu.com/docs/v6/api/reference/rs/fetch.html)，官方还没有SDK，自个对着手册写了一下。
+
 代码非常简单。用 access_key + secret_key + url 生成 access_token, 把 access_token 加在 header 里，然后向 post url 就完成上传了。
 安全编码和签名运算都是从官方复制的。
 
