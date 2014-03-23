@@ -3,20 +3,20 @@ layout: post
 title: 七牛抓取远程图片
 ---
 
-七牛支持抓取远程图片 [API](http://developer.qiniu.com/docs/v6/api/reference/rs/fetch.html)，官方还没有SDK，自个对着手册写了一下。
+七牛有获取远程资源的API [API](http://developer.qiniu.com/docs/v6/api/reference/rs/fetch.html)，
+可以把远程抓取的图片直接传到七牛服务器，在类似商品分享的程序上，可以大大减缓服务器压力。
 
-代码非常简单。用 access_key + secret_key + url 生成 access_token, 把 access_token 加在 header 里，然后向 post url 就完成上传了。
+上传远程图片需要二个步骤，首先 用自己的 access_key 和 secret_key 换取 access_token, 
+然后用 POST 的方式向七牛的服务器发出请求，在请求的 header 加入 access_token, data 里放入编码后的
+图片 url 地址, 全部代码如下。
+
 安全编码和签名运算都是从官方复制的。
-
-
     /*
      *
      * @desc URL安全形式的base64编码
      * @param string $str
      * @return string
      */
-
-
     function urlsafe_base64_encode($str){
         $find = array("+","/");
         $replace = array("-", "_");
