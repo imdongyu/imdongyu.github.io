@@ -73,7 +73,7 @@ title: 七牛抓取远程图片
     $header[] = 'Content-Type: application/json';
     $header[] = 'Authorization: QBox '. $access_token;
 
-    $con = send('iovip.qbox.me/fetch/'.$fetch.'/to/'.$to, $header);
+    $con = send($url, $header);
     var_dump($con);
 
     function send($url, $header = '') {
