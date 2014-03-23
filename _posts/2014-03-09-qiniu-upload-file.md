@@ -3,14 +3,17 @@ layout: post
 title: 七牛抓取远程图片
 ---
 
-七牛有获取远程资源的API [API](http://developer.qiniu.com/docs/v6/api/reference/rs/fetch.html)，
+七牛有获取远程资源的 [API](http://developer.qiniu.com/docs/v6/api/reference/rs/fetch.html)，
 可以把远程抓取的图片直接传到七牛服务器，在类似商品分享的程序上，可以大大减缓服务器压力。
 
 上传远程图片需要二个步骤，首先 用自己的 access_key 和 secret_key 换取 access_token, 
 然后用 POST 的方式向七牛的服务器发出请求，在请求的 header 加入 access_token, data 里放入编码后的
 图片 url 地址, 全部代码如下。
 
-安全编码和签名运算都是从官方复制的。
+
+
+    安全编码和签名运算都是从官方复制的。
+
     /*
      *
      * @desc URL安全形式的base64编码
@@ -61,15 +64,14 @@ title: 七牛抓取远程图片
 
 
     $fetch = urlsafe_base64_encode('http://203.208.46.200/images/srpr/logo11w.png');
-    $to = urlsafe_base64_encode('ibeircn:11.jpg');
+    $to = urlsafe_base64_encode('七牛空间名:目标图片.jpg'); 
 
-    $url  = 'http://iovip.qbox.me/fetch/'. $fetch .'/to/' . $to;
+    $url  = 'http://iovip.qbox.me/fetch/'. $fetch .'/to/' . $to; // 上传远程图片api地址
 
-    $access_token = generate_access_token($access_key, $secret_key, $url);
+    $access_token = generate_access_token($access_key, $secret_key, $url); 
 
     $header[] = 'Content-Type: application/json';
     $header[] = 'Authorization: QBox '. $access_token;
-
 
     $con = send('iovip.qbox.me/fetch/'.$fetch.'/to/'.$to, $header);
     var_dump($con);

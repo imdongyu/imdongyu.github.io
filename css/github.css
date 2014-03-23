@@ -127,7 +127,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 pre {
   border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 code {
-  font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 12px;
 }
