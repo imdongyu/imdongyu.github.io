@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mysql 优化
+title: Mysql 简单优化
 ---
 
 看视频教程做的一些笔记，视频地址：[网站性能优化](http://study.163.com/course/courseMain.htm?courseId=266031#/courseMain)
@@ -41,7 +41,7 @@ title: Mysql 优化
 
 ### desc 检查 sql 语句问题
 
-在日志中找到一条 sql
+在日志中找到一条超时的 sql
 
 	# Time: 140505 14:50:26
 	# User@Host: root[root] @ localhost [::1]
