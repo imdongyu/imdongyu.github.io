@@ -3,7 +3,7 @@ layout: post
 title: Mysql 优化
 ---
 
-看视频教程做的一些笔记，视频地址：(网站性能优化)[http://study.163.com/course/courseMain.htm?courseId=266031#/courseMain]
+看视频教程做的一些笔记，视频地址：[网站性能优化](http://study.163.com/course/courseMain.htm?courseId=266031#/courseMain)
 
 
 ### 慢查询日志
