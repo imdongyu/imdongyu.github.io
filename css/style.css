@@ -38,7 +38,9 @@ a {
 .main p {
 	margin-bottom: 20px;
 }
-
+ol, ul {
+  margin-left: 20px;
+}
 .posts-list li{
   padding-bottom: 5px;
   border-bottom: 1px solid #EEE; 
