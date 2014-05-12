@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
 
 html, body {
   color: #555;
@@ -63,7 +65,15 @@ a {
 }
 
 .pager {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+}
+.pager a {
+  color: #666;
+}
+.previous {
+  float: left;
+}
+.next {
+  float: right;
 }
 
