@@ -16,14 +16,17 @@ title: 缩略图的三种方式
 ![totoro](/img/totoro.jpg)
 
 等比例
+
 ![totoro1](/img/totoro-1.jpg)
 
 剪裁
+
 ![totoro2](/img/totoro-2.jpg)
 
 补白
 
 ![totoro3](/img/totoro-3.jpg)
+
 代码：
 
 [php 缩略图](https://github.com/imdongyu/php-class/blob/master/Image.class.php)

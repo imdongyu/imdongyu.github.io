@@ -15,6 +15,10 @@ html, body {
 ul {
   list-style: none;
 }
+ol, ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 a {
   text-decoration: none;
   color: #1e0fbe;
@@ -38,9 +42,7 @@ a {
 .main p {
 	margin-bottom: 20px;
 }
-ol, ul {
-  margin-left: 20px;
-}
+
 .posts-list li{
   padding-bottom: 5px;
   border-bottom: 1px solid #EEE; 
