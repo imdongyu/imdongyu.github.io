@@ -1,9 +1,0 @@
-pygments:     true
-markdown:     rdiscount
-permalink:    /posts/:year-:month-:day-:title.html
-title:        东隅
-description:  写代码的，phper。
-keywords:     折腾,编程
-author:       dongyu
-email:        dongyume@gmail.com
-github:       http://github.com/imdongyu
